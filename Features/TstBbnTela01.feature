@@ -4,9 +4,8 @@ A short summary of the feature
 
 @cadastroDeProdutoCamposVazios
 Scenario: Cadastro de produto sem dados nos campos
-	Given Abro o navegador
-	When Entro na tela de cadastro de produto
-	And Digito o nome do produto ""
+	Given Entro na tela de cadastro de produto
+	When Digito o nome do produto ""
 	And digito o preço do produto ""
 	And digito a data de validade ""
 	And clico em adicionar
@@ -14,9 +13,8 @@ Scenario: Cadastro de produto sem dados nos campos
 
 @cadastroDeProdutoDataInválida
 Scenario: Cadastro de produto com data invalida
-	Given Abro o navegador
-	When Entro na tela de cadastro de produto
-	And Digito o nome do produto "agua"
+	Given Entro na tela de cadastro de produto
+	When Digito o nome do produto "agua"
 	And digito o preço do produto "10"
 	And digito a data de validade "01/01/2022"
 	And clico em adicionar

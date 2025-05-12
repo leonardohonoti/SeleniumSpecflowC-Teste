@@ -17,15 +17,8 @@ namespace TstBNB.StepDefinitions
             cadastroProdutoPage = new CadastroProdutoPage(driver);
         }
 
-        [Given(@"Abro o navegador")]
-        public void GivenAbroONavegador()
-        {
-         //   driver = new ChromeDriver();
-         //   driver.Manage().Window.Maximize();
-        }
-
-        [When(@"Entro na tela de cadastro de produto")]
-        public void WhenEntroNaTelaDeCadastroDeProduto()
+        [Given(@"Entro na tela de cadastro de produto")]
+        public void GivenEntroNaTelaDeCadastroDeProduto()
         {
             driver.Url = "file:///C:/Users/Basis/AppData/Local/Temp/Rar$EXa27500.13932/TST/teste-1.html";
             Thread.Sleep(1000);
@@ -72,5 +65,7 @@ namespace TstBNB.StepDefinitions
         }
     }
 }
+
+
 
 

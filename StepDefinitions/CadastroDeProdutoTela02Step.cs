@@ -17,8 +17,8 @@ namespace TstBNB.StepDefinitions
             cadastroProdutoPageTela01 = new CadastroProdutoPage(driver);
         }
 
-        [When(@"Entro na segunda tela de cadastro de produto")]
-        public void WhenEntroNaSegundaTelaDeCadastroDeProduto()
+        [Given(@"Entro na segunda tela de cadastro de produto")]
+        public void GivenEntroNaSegundaTelaDeCadastroDeProduto()
         {
             driver.Url = "file:///C:/Users/Basis/AppData/Local/Temp/Rar$EXa27500.15782/TST/teste-2.html";
             Thread.Sleep(1000);

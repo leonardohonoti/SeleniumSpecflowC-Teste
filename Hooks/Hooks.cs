@@ -58,6 +58,8 @@ namespace TstBNB.Hooks
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
 
+            //driver.Navigate().GoToUrl("file:///C:/Users/Basis/AppData/Local/Temp/Rar$EXa27500.13932/TST/teste-1.html");
+
             _container.RegisterInstanceAs<IWebDriver>(driver);
             _scenario = _feature.CreateNode<Scenario>(scenarioContext.ScenarioInfo.Title);
         }

@@ -17,8 +17,8 @@ namespace TstBNB.StepDefinitions
             cadastroProdutoPage = new CadastroProdutoPage(driver);
         }
 
-        [When(@"Entro na terceira tela de cadastro de produto")]
-        public void WhenEntroNaTerceiraTelaDeCadastroDeProduto()
+        [Given(@"Entro na terceira tela de cadastro de produto")]
+        public void GivenEntroNaTerceiraTelaDeCadastroDeProduto()
         {
             driver.Url = "file:///C:/Users/Basis/AppData/Local/Temp/Rar$EXa27500.16181/TST/teste-3.html";
             Thread.Sleep(1000);
@@ -37,4 +37,5 @@ namespace TstBNB.StepDefinitions
         }
     }
 }
+
 
