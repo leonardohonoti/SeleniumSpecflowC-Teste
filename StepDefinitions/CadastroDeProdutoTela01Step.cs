@@ -43,8 +43,8 @@ namespace TstBNB.StepDefinitions
             cadastroProdutoPage.DigitarPrecoProduto(preco);
         }
 
-        [When(@"digito a data de vancimento ""([^""]*)""")]
-        public void WhenDigitoADataDeVancimento(string validade)
+        [When(@"digito a data de validade ""([^""]*)""")]
+        public void WhenDigitoADataDeValidade(string validade)
 
         {
             cadastroProdutoPage.DigitarDataValidadeProduto(validade);

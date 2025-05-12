@@ -8,7 +8,7 @@ Scenario: Cadastro de produto sem dados nos campos
 	When Entro na segunda tela de cadastro de produto
 	And Digito o nome do produto ""
 	And digito o preço do produto ""
-	And digito a data de vancimento ""
+	And digito a data de validade ""
 	And clico em adicionar
 	Then Vejo a mensagem no campo nome "Nome invalido"
 	And Vejo a mensagem no campo preço "Preço invalido"
@@ -20,6 +20,6 @@ Scenario: Cadastro de produto com data invalida e preço invalido
 	When Entro na segunda tela de cadastro de produto
 	And Digito o nome do produto "agua"
 	And digito o preço do produto "-10"
-	And digito a data de vancimento "12/01/2025"
+	And digito a data de validade "12/01/2025"
 	And clico em adicionar
 	Then Verifico que o produto "agua" foi adicionado

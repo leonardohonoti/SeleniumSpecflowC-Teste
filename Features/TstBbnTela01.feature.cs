@@ -115,7 +115,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("digito o preço do produto \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 11
- testRunner.And("digito a data de vancimento \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("digito a data de validade \"\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
  testRunner.And("clico em adicionar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -169,7 +169,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("digito o preço do produto \"10\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 21
- testRunner.And("digito a data de vancimento \"01/01/2022\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("digito a data de validade \"01/01/2022\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 22
  testRunner.And("clico em adicionar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
