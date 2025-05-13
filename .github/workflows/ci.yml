@@ -1,8 +1,4 @@
-- name: Salvar resultados de teste
-  uses: actions/upload-artifact@v2.3.1
-  with:
-    name: test-results
-    path: '**/TestResults/*.trx'name: .NET SpecFlow CI
+name: .NET SpecFlow CI
 
 on:
   push:
