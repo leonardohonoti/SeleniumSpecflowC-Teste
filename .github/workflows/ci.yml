@@ -25,14 +25,11 @@ jobs:
       - name: Compilar projeto
         run: dotnet build --no-restore
 
-      - name: Rodar testes
-        run: dotnet test --no-build --verbosity normal
-
       - name: Rodar testes com relatório
-  run: dotnet test --no-build --logger "trx"
-  
+        run: dotnet test --no-build --logger "trx"
+
       - name: Salvar resultados de teste
-  uses: actions/upload-artifact@v3
-  with:
-    name: test-results
-    path: '**/TestResults/*.trx'
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results
+          path: '**/TestResults/*.trx'
