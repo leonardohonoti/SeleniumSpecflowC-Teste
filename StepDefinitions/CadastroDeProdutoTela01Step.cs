@@ -20,7 +20,7 @@ namespace TstBNB.StepDefinitions
         [Given(@"Entro na tela de cadastro de produto")]
         public void GivenEntroNaTelaDeCadastroDeProduto()
         {
-            driver.Url = "file:///C:/Users/Basis/AppData/Local/Temp/Rar$EXa27500.13932/TST/teste-1.html";
+            driver.Url = "file:///C:/SpecFlow/TstBNB/test_files/teste-1.html";
             Thread.Sleep(1000);
         }
 
