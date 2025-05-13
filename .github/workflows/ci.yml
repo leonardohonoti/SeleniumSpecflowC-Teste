@@ -28,8 +28,11 @@ jobs:
       - name: Rodar testes
         run: dotnet test --no-build --logger "trx"
 
-      - name: Salvar resultados de teste
-        uses: actions/upload-artifact@v2
+       - name: Gerar relatório HTML com LivingDoc
+        run: dotnet livingdoc feature-file --output TestResults/LivingDocReport.html
+
+      - name: Salvar relatório de teste como artefato
+        uses: actions/upload-artifact@v3
         with:
-          name: test-results
-          path: '**/TestResults/*.trx'
+          name: livingdoc-report
+          path: TestResults/LivingDocReport.html
