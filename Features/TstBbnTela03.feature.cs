@@ -74,14 +74,14 @@ namespace TstBNB.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cadastro de produto preço invalido")]
-        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoPrecoInvalido")]
-        public virtual void CadastroDeProdutoPrecoInvalido()
+        [NUnit.Framework.DescriptionAttribute("Cadastro de produto preço invalido Tela 03")]
+        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoPrecoInvalidoTela03")]
+        public virtual void CadastroDeProdutoPrecoInvalidoTela03()
         {
             string[] tagsOfScenario = new string[] {
-                    "cadastroDeProdutoPrecoInvalido"};
+                    "cadastroDeProdutoPrecoInvalidoTela03"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto preço invalido", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto preço invalido Tela 03", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -125,14 +125,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com data invalida")]
-        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDataInválida")]
-        public virtual void CadastroDeProdutoComDataInvalida()
+        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com data invalida Tela 03")]
+        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDataInválidaTela03")]
+        public virtual void CadastroDeProdutoComDataInvalidaTela03()
         {
             string[] tagsOfScenario = new string[] {
-                    "cadastroDeProdutoDataInválida"};
+                    "cadastroDeProdutoDataInválidaTela03"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com data invalida", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com data invalida Tela 03", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -176,14 +176,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com dados Validos")]
-        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDadosValidos")]
-        public virtual void CadastroDeProdutoComDadosValidos()
+        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com dados Validos Tela 03")]
+        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDadosValidosTela03")]
+        public virtual void CadastroDeProdutoComDadosValidosTela03()
         {
             string[] tagsOfScenario = new string[] {
-                    "cadastroDeProdutoDadosValidos"};
+                    "cadastroDeProdutoDadosValidosTela03"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com dados Validos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com dados Validos Tela 03", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

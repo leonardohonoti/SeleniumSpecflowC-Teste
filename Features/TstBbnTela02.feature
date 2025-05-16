@@ -2,8 +2,8 @@
 
 A short summary of the feature
 
-@cadastroDeProdutoCamposVazios
-Scenario: Cadastro de produto sem dados nos campos
+@cadastroDeProdutoCamposVaziosTela02
+Scenario: Cadastro de produto sem dados nos campos Tela02
 	Given Entro na segunda tela de cadastro de produto
 	When Digito o nome do produto ""
 	And digito o preço do produto ""
@@ -13,8 +13,8 @@ Scenario: Cadastro de produto sem dados nos campos
 	And Vejo a mensagem no campo preço "Preço invalido"
 	And Vejo a mensagem no campo Validade "Validade Invalida"
 
-@cadastroDeProdutoDataInválida
-Scenario: Cadastro de produto com data invalida e preço invalido
+@cadastroDeProdutoDataInválidaTela02
+Scenario: Cadastro de produto com data invalida e preço invalido Tela 02
 	Given Entro na segunda tela de cadastro de produto
 	When Digito o nome do produto "agua"
 	And digito o preço do produto "-10"

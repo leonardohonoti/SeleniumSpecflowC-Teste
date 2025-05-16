@@ -2,8 +2,8 @@
 
 A short summary of the feature
 
-@cadastroDeProdutoPrecoInvalido
-Scenario: Cadastro de produto preço invalido
+@cadastroDeProdutoPrecoInvalidoTela03
+Scenario: Cadastro de produto preço invalido Tela 03
 	Given Entro na terceira tela de cadastro de produto
 	When Digito o nome do produto "Agua"
 	And digito o preço do produto "-1"
@@ -11,8 +11,8 @@ Scenario: Cadastro de produto preço invalido
 	And clico em adicionar
 	Then Vejo a mensagem no campo preço "Preço invalido"
 
-@cadastroDeProdutoDataInválida
-Scenario: Cadastro de produto com data invalida
+@cadastroDeProdutoDataInválidaTela03
+Scenario: Cadastro de produto com data invalida Tela 03
 	Given Entro na terceira tela de cadastro de produto
 	When Digito o nome do produto "agua"
 	And digito o preço do produto "10"
@@ -20,8 +20,8 @@ Scenario: Cadastro de produto com data invalida
 	And clico em adicionar
 	Then Vejo a mensagem no campo Validade "Validade Invalida"
 
-@cadastroDeProdutoDadosValidos
-Scenario: Cadastro de produto com dados Validos
+@cadastroDeProdutoDadosValidosTela03
+Scenario: Cadastro de produto com dados Validos Tela 03
 	Given Entro na terceira tela de cadastro de produto
 	When Digito o nome do produto "agua"
 	And digito o preço do produto "10"

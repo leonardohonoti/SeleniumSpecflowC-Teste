@@ -37,11 +37,24 @@ namespace TstBNB.Utility
 
         public string addScreenshot(IWebDriver driver, ScenarioContext scenarioContext)
         {
-            ITakesScreenshot takesScreenshot = (ITakesScreenshot)driver;
-            Screenshot screenshot = takesScreenshot.GetScreenshot();
-            string screenshotLocation = Path.Combine(testResultPath, scenarioContext.ScenarioInfo.Title + ".png");
-            screenshot.SaveAsFile(screenshotLocation, ScreenshotImageFormat.Png);
-            return screenshotLocation;
+            {
+                // Garante que a pasta TestResults exista
+                if (!Directory.Exists(testResultPath))
+                    Directory.CreateDirectory(testResultPath);
+
+                // Cria nome seguro e único para o arquivo
+                string safeTitle = string.Concat(scenarioContext.ScenarioInfo.Title.Split(Path.GetInvalidFileNameChars()));
+                string fileName = $"{safeTitle}_{DateTime.Now:yyyyMMdd_HHmmss}.png";
+                string screenshotLocation = Path.Combine(testResultPath, fileName);
+
+                // Captura e salva a imagem
+                ITakesScreenshot takesScreenshot = (ITakesScreenshot)driver;
+                Screenshot screenshot = takesScreenshot.GetScreenshot();
+                screenshot.SaveAsFile(screenshotLocation, ScreenshotImageFormat.Png);
+
+                // Retorna apenas o nome do arquivo (relativo à pasta do relatório)
+                return fileName;
+            }
         }
     }
 }

@@ -74,14 +74,14 @@ namespace TstBNB.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cadastro de produto sem dados nos campos")]
-        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoCamposVazios")]
-        public virtual void CadastroDeProdutoSemDadosNosCampos()
+        [NUnit.Framework.DescriptionAttribute("Cadastro de produto sem dados nos campos Tela02")]
+        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoCamposVaziosTela02")]
+        public virtual void CadastroDeProdutoSemDadosNosCamposTela02()
         {
             string[] tagsOfScenario = new string[] {
-                    "cadastroDeProdutoCamposVazios"};
+                    "cadastroDeProdutoCamposVaziosTela02"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto sem dados nos campos", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto sem dados nos campos Tela02", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -131,14 +131,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com data invalida e preço invalido")]
-        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDataInválida")]
-        public virtual void CadastroDeProdutoComDataInvalidaEPrecoInvalido()
+        [NUnit.Framework.DescriptionAttribute("Cadastro de produto com data invalida e preço invalido Tela 02")]
+        [NUnit.Framework.CategoryAttribute("cadastroDeProdutoDataInválidaTela02")]
+        public virtual void CadastroDeProdutoComDataInvalidaEPrecoInvalidoTela02()
         {
             string[] tagsOfScenario = new string[] {
-                    "cadastroDeProdutoDataInválida"};
+                    "cadastroDeProdutoDataInválidaTela02"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com data invalida e preço invalido", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cadastro de produto com data invalida e preço invalido Tela 02", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 17
 this.ScenarioInitialize(scenarioInfo);
 #line hidden

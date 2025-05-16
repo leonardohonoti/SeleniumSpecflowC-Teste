@@ -11,8 +11,8 @@ Scenario: Cadastro de produto sem dados nos campos
 	And clico em adicionar
 	Then Verifico que o produto foi adicionado sem dados como intem "1"
 
-@cadastroDeProdutoDataInválida
-Scenario: Cadastro de produto com data invalida
+@cadastroDeProdutoDataInválidaTela01
+Scenario: Cadastro de produto com data invalida Tela01
 	Given Entro na tela de cadastro de produto
 	When Digito o nome do produto "agua"
 	And digito o preço do produto "10"

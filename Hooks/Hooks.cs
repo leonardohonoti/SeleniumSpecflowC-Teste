@@ -65,13 +65,17 @@ namespace TstBNB.Hooks
         }
 
         [AfterScenario]
-        public void AfterScenario()
+        public void AfterScenario(ScenarioContext scenarioContext)
         {
             Console.WriteLine("Rodar depois de cenário...");
             var driver = _container.Resolve<IWebDriver>();
 
+            string screenshotName = addScreenshot(driver, scenarioContext);
+            _scenario.Info("Screenshot final do cenário",
+                MediaEntityBuilder.CreateScreenCaptureFromPath(screenshotName).Build());
+
             if (driver != null)
-            {
+            { 
                 driver.Quit();
             }
         }
